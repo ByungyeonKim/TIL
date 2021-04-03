@@ -23,6 +23,7 @@
 | 예2 | "z-+.^."                       | "z--"             |
 | 예3 | "=.="                          | "aaa"             |
 | 예4 | "123\_.def"                    | "123\_.def"       |
+| 예5 | "abcdefghijklmn.p"             | "abcdefghijklmn"  |
 
 ## 코드
 
