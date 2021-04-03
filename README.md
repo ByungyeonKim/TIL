@@ -4,6 +4,8 @@
 
 #### Algorithm
 
+- [신규 아이디 추천](https://github.com/ByungyeonKim/TIL/blob/main/Algorithm/new-id.md)
+
 #### React.js
 
 #### ETC
