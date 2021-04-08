@@ -6,6 +6,7 @@
 
 - [신규 아이디 추천](https://github.com/ByungyeonKim/TIL/blob/main/Algorithm/new-id.md)
 - [체육복을 빌려줘](https://github.com/ByungyeonKim/TIL/blob/main/Algorithm/gym-clothes.md)
+- [모의고사](https://github.com/ByungyeonKim/TIL/blob/main/Algorithm/mock-test.md)
 
 #### React.js
 
