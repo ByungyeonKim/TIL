@@ -12,6 +12,8 @@ function App() {
         <Link to='/profile'>Profile</Link>
       </nav>
       <Switch>
+        {/* Class Component 사용 시  */}
+        {/* <Route path={['/', '/home']} exact component={Home} /> */}
         <Route path={['/', '/home']} exact>
           <Home />
         </Route>
