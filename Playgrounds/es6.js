@@ -73,23 +73,3 @@ function multiply(a, b = 1) {
 
 console.log(multiply(5)); // 5
 console.log(multiply(5, 5)); // 25
-
-// Promise
-// 비동기 작업의 최종 완료 또는 실패를 나타내는 객체
-// 주로 서버에서 받아온 데이터를 화면에 표시할 때 사용한다.
-// 데이터와 관련된 렌더링을 할 때, 데이터를 받아온 후 렌더링하기 위해 사용.
-// 프로미스엔 상태(states)가 존재하며 3가지의 상태를 갖는다.
-// 1. Pending(대기) : 비동기 처리 로직이 아직 완료되지 않음
-// 2. Fulfilled(이행) : 비동기 처리가 완료되어 프로미스가 결과 값을 반환해줌
-// 3. Rejected(실패) : 비동기 처리가 실패하거나 오류가 발생함
-const getData = () => {
-  return new Promise((resolve, reject) => {
-    const data = 100;
-    resolve(data);
-    reject(new Error('Request is failed.'));
-  });
-};
-
-getData().then((data) => {
-  console.log(data);
-});
