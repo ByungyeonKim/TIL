@@ -59,6 +59,27 @@ const rl = readline.createInterface({
   input: process.stdin,
 });
 
+rl.on('line', (num) => {
+  if ((num % 4 === 0 && num % 100 !== 0) || num % 400 === 0) {
+    console.log(1);
+  } else {
+    console.log(0);
+  }
+  rl.close();
+}).on('close', function () {
+  process.exit();
+});
+```
+
+## 사분면 고르기
+
+```js
+const readline = require('readline');
+
+const rl = readline.createInterface({
+  input: process.stdin,
+});
+
 let input = [];
 
 rl.on('line', (num) => {
@@ -67,10 +88,12 @@ rl.on('line', (num) => {
 }).on('close', function () {
   const x = Number(input[0]);
   const y = Number(input[1]);
-  if (x > 0 && y > 0) console.log(1);
-  if (x < 0 && y > 0) console.log(2);
-  if (x < 0 && y < 0) console.log(3);
-  if (x > 0 && y < 0) console.log(4);
+  let quadrant = '';
+  if (x > 0 && y > 0) quadrant = 1;
+  if (x < 0 && y > 0) quadrant = 2;
+  if (x < 0 && y < 0) quadrant = 3;
+  if (x > 0 && y < 0) quadrant = 4;
+  console.log(quadrant);
   process.exit();
 });
 ```
