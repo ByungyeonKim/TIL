@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.section1 {
+  background-color: beige;
+}
+
+.section2 {
+  background-color: green;
+}
+
+.section3 {
+  background-color: blueviolet;
+}
+
+.section4 {
+  background-color: cornflowerblue;
+}
+
+.section5 {
+  background-color: coral;
+}
+
+.inverse {
+  color: #fff;
+  background-color: #111;
+}
