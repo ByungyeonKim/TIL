@@ -1,0 +1,78 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #dfdbdb;
+}
+
+a {
+  text-decoration: none;
+  color: #111;
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  transition: transform 400ms ease-in-out 0s,
+    background-color 400ms ease-in-out 0s;
+  background-color: transparent;
+}
+
+.header-container {
+  height: 68px;
+  padding: 10px 40px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home {
+  font-size: 21px;
+  color: blue;
+}
+
+.menu {
+  display: flex;
+  flex-grow: 1;
+  padding-left: 80px;
+}
+
+.menu a {
+  font-size: 14px;
+  line-height: 22px;
+  color: #838383;
+  letter-spacing: -0.04em;
+}
+
+.menu a:not(:first-child) {
+  padding-left: 18px;
+}
+
+.user-info {
+  font-size: 14px;
+}
+
+.user-info a:not(:last-child) {
+  padding-right: 26px;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 24px;
+  height: 800px;
+}
+
+.avatar {
+  width: 500px;
+  height: 500px;
+}
