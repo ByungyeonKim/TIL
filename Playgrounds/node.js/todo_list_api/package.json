@@ -1,0 +1,22 @@
+{
+  "name": "todo_list_api",
+  "version": "1.0.0",
+  "description": "RESTful todolist API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "keywords": [
+    "RESTful"
+  ],
+  "author": "BY",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^6.0.11"
+  }
+}
