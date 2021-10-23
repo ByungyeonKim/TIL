@@ -8,5 +8,9 @@
     "start": "node hello_world.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.23.0",
+    "cheerio": "^1.0.0-rc.10"
+  }
 }
