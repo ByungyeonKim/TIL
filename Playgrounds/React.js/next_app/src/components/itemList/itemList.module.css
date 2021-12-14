@@ -1,0 +1,16 @@
+.item_container {
+  text-align: center;
+}
+
+.item_img,
+.item_container h4 {
+  margin-inline: auto;
+}
+
+.item_container h4 {
+  max-width: 158px;
+}
+
+.item_price {
+  color: sandybrown;
+}

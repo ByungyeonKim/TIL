@@ -1,0 +1,78 @@
+:root {
+  --fs-300: 0.6875rem;
+  --fs-400: 0.8125rem;
+  --fs-500: 1.25rem;
+
+  --bg-dark: #424242;
+  --bg-primary: #fff;
+  --bg-accent: #ab47bc;
+  --bg-datk-light: #707070;
+
+  --border-primary-400: 2px solid #a775f1;
+}
+
+/* Box sizing 규칙 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* margin 기본값 제거 */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* ul, ol 요소의 리스트 역할에서 리스트 스타일 제거, 기본 스타일 제거를 의미함 */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* 핵심 root 기본값 설정 */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* 핵심 body 기본값 설정 */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  width: min(90%, 70rem);
+  margin-inline: auto !important;
+}
+
+/* 클래스가 없는 a 요소는 기본 스타일을 가져옴, 문자의 가독성을 위함 */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* 이미지 작업을 좀 더 쉽게 해준다 */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* 폰트 상속(Inherit) */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+footer {
+  text-align: center;
+  padding: 0 0 14px;
+}
