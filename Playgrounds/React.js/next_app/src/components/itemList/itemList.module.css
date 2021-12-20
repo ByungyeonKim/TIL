@@ -2,6 +2,14 @@
   text-align: center;
 }
 
+.item_link {
+  cursor: pointer;
+}
+
+.item_link:hover {
+  filter: contrast(0.5);
+}
+
 .item_img,
 .item_container h4 {
   margin-inline: auto;

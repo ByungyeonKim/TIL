@@ -1,0 +1,12 @@
+.detail {
+  display: flex;
+}
+
+.info {
+  padding-left: 2rem;
+}
+
+.name {
+  display: block;
+  margin-block: 0.875rem;
+}
