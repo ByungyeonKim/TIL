@@ -1,6 +1,5 @@
 import { Menu } from 'semantic-ui-react';
 import { useRouter } from 'next/router';
-import Head from 'next/head';
 
 export default function Gnb() {
   const router = useRouter();
@@ -22,13 +21,6 @@ export default function Gnb() {
 
   return (
     <>
-      <Head>
-        <title>About Me</title>
-        <meta
-          name='description'
-          content='안녕하세요. 사용자와 제일 친한 🤝 주니어 프론트엔드 개발자입니다.'
-        ></meta>
-      </Head>
       <Menu inverted>
         <Menu.Item
           name='home'
