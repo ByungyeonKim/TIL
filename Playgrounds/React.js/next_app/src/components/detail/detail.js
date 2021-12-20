@@ -3,6 +3,7 @@ import styles from './detail.module.css';
 
 const Detail = ({ item }) => {
   const { image_link, name, price, description } = item;
+
   return (
     <section className={styles.detail}>
       <img src={image_link} alt={name}></img>

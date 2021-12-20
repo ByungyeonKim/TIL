@@ -9,7 +9,7 @@ const ItemList = ({ list }) => {
         <Grid.Row className={styles.item_row}>
           {list.map((item) => (
             <Grid.Column key={item.id} className={styles.item_link}>
-              <Link href={`/view/${item.id}`}>
+              <Link href={`/detail/${item.id}`}>
                 <div className={styles.item_container}>
                   <Image
                     src={item.image_link}
