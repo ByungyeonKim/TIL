@@ -7,8 +7,8 @@ import { Loader, Divider, Header } from 'semantic-ui-react';
 export default function Home() {
   const [list, setList] = useState([]);
   const [isLoading, setLoading] = useState(true);
-  const url =
-    'http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline';
+  const url = process.env.NEXT_PUBLIC_API_URL;
+  console.log(url);
 
   const getData = async () => {
     const res = await axios.get(url);

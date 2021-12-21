@@ -10,3 +10,12 @@
   display: block;
   margin-block: 0.875rem;
 }
+
+.description {
+  overflow: hidden;
+  line-height: 1.4em;
+  max-height: 14em;
+  display: -webkit-box;
+  -webkit-line-clamp: 10;
+  -webkit-box-orient: vertical;
+}

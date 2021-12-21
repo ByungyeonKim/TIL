@@ -20,7 +20,7 @@ const Detail = ({ item }) => {
           </Button.Content>
         </Button>
         <Divider />
-        <p>{description}</p>
+        <p className={styles.description}>{description}</p>
       </div>
     </section>
   );

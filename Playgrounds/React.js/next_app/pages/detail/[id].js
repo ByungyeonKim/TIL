@@ -2,13 +2,15 @@ import Head from 'next/head';
 import axios from 'axios';
 import Detail from '../../src/components/detail/detail';
 
-const Item = ({ item }) => {
+const Item = ({ item, name }) => {
   return (
     <>
       {item && (
         <>
           <Head>
-            <title>{item.name}</title>
+            <title>
+              {name} | {item.name}
+            </title>
             <meta name='description' content={item.description}></meta>
           </Head>
           <Detail item={item} />
@@ -29,6 +31,7 @@ export async function getServerSideProps(context) {
   return {
     props: {
       item: result,
+      name: process.env.name,
     },
   };
 }
