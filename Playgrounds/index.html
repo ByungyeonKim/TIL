@@ -3,20 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script
       src="https://kit.fontawesome.com/096073a2a8.js"
       crossorigin="anonymous"
       defer
     ></script>
-    <script type="module" src="pagination.js" defer></script>
+    <!-- <script type="module" src="pagination.js" defer></script> -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="app"></div>
+    <header>
+      <h1>헤더</h1>
+    </header>
+    <main>메인 콘텐트</main>
+    <footer>
+      <h1>푸터</h1>
+    </footer>
+    <style>
+      html,
+      body {
+        height: 100%;
+        display: flex;
+        flex-flow: column;
+        margin: 0;
+      }
+      main {
+        flex: 1;
+      }
+    </style>
   </body>
 </html>
