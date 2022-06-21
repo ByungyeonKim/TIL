@@ -1,13 +1,24 @@
 'use strict';
 
-const foo = () => console.log('First');
-const bar = () => setTimeout(() => console.log('Second'), 500);
-const baz = () => console.log('Third');
+// function multifly(a, b) {
+//   return a * b;
+// }
 
-bar();
-foo();
-baz();
+// function square(n) {
+//   return multifly(n, n);
+// }
 
-// First
-// Third
-// Second
+// function printSquare(n) {
+//   var squared = square(n);
+//   console.log(squared);
+// }
+
+// printSquare(4);
+
+console.log('안녕!');
+
+setTimeout(function there() {
+  console.log('거기 너 말이야.');
+}, 0);
+
+console.log('만나서 반가워');

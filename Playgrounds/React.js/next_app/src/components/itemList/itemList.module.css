@@ -1,0 +1,24 @@
+.item_container {
+  text-align: center;
+}
+
+.item_link {
+  cursor: pointer;
+}
+
+.item_link:hover {
+  filter: contrast(0.5);
+}
+
+.item_img,
+.item_container h4 {
+  margin-inline: auto;
+}
+
+.item_container h4 {
+  max-width: 158px;
+}
+
+.item_price {
+  color: sandybrown;
+}

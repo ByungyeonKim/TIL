@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Throttling</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+    <script src="throttling.js" defer></script>
+  </head>
+  <body>
+    <div class="fixed top-0 right-0 bottom-0 left-0 flex items-center justify-center bg-zinc-800">
+      <section class="rounded-3xl border-2 bg-zinc-50">
+        <div class="p-8 text-center sm:p-12">
+          <p>
+            <span class="text-sm font-semibold">클릭 횟수 : </span>
+            <span id="clickCnt" class="text-sm font-semibold tracking-widest text-red-500">0</span>
+          </p>
+          <p>
+            <span class="text-sm font-semibold">쓰로틀링이 함수를 실행한 횟수 : </span>
+            <span id="throttlingCnt" class="text-sm font-semibold tracking-widest text-violet-500"
+              >0</span
+            >
+          </p>
+
+          <h5 class="mt-6 text-2xl md:3xl font-bold">Javascript Throttling</h5>
+          <button
+            id="clickBtn"
+            type="button"
+            class="inline-block w-full py-4 mt-8 text-sm font-bold text-white bg-violet-600 rounded-full"
+          >
+            Click Me!
+          </button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
