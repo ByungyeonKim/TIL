@@ -7,7 +7,7 @@ const route = (event) => {
 
 const routes = {
   404: '/pages/404.html',
-  '/': '/pages/home.html',
+  '/': '/pages/index.html',
   '/about': '/pages/about.html',
   '/lorem': '/pages/lorem.html',
 };
@@ -21,3 +21,5 @@ const handleLocation = async () => {
 
 window.onpopstate = handleLocation;
 window.route = route;
+
+handleLocation();
