@@ -1,9 +1,13 @@
-import './App.css';
+import Day from './components/Day';
+import DayList from './components/DayList';
+import Header from './components/Header';
 
 function App() {
   return (
-    <div className='App'>
-      <h1>Hello world!</h1>
+    <div className="flex justify-center items-center h-screen flex-col">
+      <Header />
+      <DayList />
+      <Day />
     </div>
   );
 }
