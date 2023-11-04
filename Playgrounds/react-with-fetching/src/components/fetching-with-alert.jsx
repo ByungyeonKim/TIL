@@ -36,7 +36,7 @@ export function FetchingWithAlert() {
       {fetchStatus === 'success' && <pre>{JSON.stringify(users, null, 2)}</pre>}
       {fetchStatus === 'delayed' && (
         <p>
-          인터넷 연결이 느린 것 같습니다. 데이터를 불러오는 데에 다소 시간이
+          응답이 평소보다 느린 것 같습니다. 데이터를 불러오는 데에 다소 시간이
           걸릴 수 있습니다. 잠시만 기다려 주세요.
         </p>
       )}
